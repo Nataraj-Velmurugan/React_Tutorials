@@ -141,8 +141,8 @@ fruits.push("Kiwi");
 const fruits = ["Banana", "Orange", "Apple", "Mango"];
 fruits.pop();
 
-const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
-const citrus = fruits.slice(1, 3);
+var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+fruits.slice(1, 3);
 
 const fruits = ["Banana", "Orange", "Apple", "Mango"];
 
@@ -155,8 +155,8 @@ fruits.sort();
 const points = [40, 100, 1, 5, 25, 10];
 points.sort(function (a, b) { return a - b });
 
-const fruits = ["Banana", "Orange", "Apple", "Mango"];
-fruits.reverse();
+const fruit = ["Banana", "Orange", "Apple", "Mango"];
+fruit.reverse();
 
 // Extends
 
