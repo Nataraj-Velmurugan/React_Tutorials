@@ -10,17 +10,29 @@ import SimpleComponent from './Components/Arrays_Lists/SimpleComponent';
 import ContextHome from './Components/Context/ContextHome';
 import LazyFunc from './Components/Lazy_Loading/LazyFunc';
 import Loader from './Components/Lazy_Loading/Loader';
-
-const LazyClass = React.lazy(() => import ('./Components/Lazy_Loading/LazyClass'));
+import ErrorBoundary from './Components/Error/ErrorBoundary';
+import ErrorChild from './Components/Error/ErrorChild'
+import RefDOMComponent from './Components/Refs_DOM/RefDOMComponent';
+import RefFunc from './Components/Refs_DOM/RefFunc';
+import HocComponent from './Components/HOC/hocComponent';
+import ButtonHOCComponent from './Components/HOC/ButtonHOCComponent';
 
 const App = () => {
   return (
-    <div className="App">
-      <LazyFunc />
-      <Suspense fallback={<Loader/>}>
-        <LazyClass />
-      </Suspense>
-    </div>
+    // <div>
+    //   <RefDOMComponent></RefDOMComponent>
+
+    // </div>
+
+    // <HocComponent disable/>
+    <>
+      <ButtonHOCComponent enable />
+
+      <ButtonHOCComponent afterClick />
+
+      <ButtonHOCComponent />
+    </>
+
   );
 }
 

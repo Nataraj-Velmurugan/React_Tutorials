@@ -34,8 +34,8 @@ export default class ParentLifeCycle extends Component {
 
   shouldComponentUpdate() {
     // make decisions to re - render a changed state or props value
-    console.log("parent shouldComponentUpdate")
-    console.log(this.state.count)
+    console.log("parent shouldComponentUpdate");
+    console.log(this.state.count);
     if(this.state.count >= 0) {
       console.log("shouldComponentUpdate - true")
       return true

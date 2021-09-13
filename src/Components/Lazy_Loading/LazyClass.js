@@ -9,3 +9,10 @@ export default class LazyClass extends Component {
         )
     }
 }
+
+// const LazyClass = React.lazy(() => import('./Components/Lazy_Loading/LazyClass'));
+
+{/* <LazyFunc />
+      <Suspense fallback={<Loader/>}>
+        <LazyClass />
+      </Suspense> */}
