@@ -17,14 +17,17 @@ import RefFunc from './Components/Refs_DOM/RefFunc';
 import HocComponent from './Components/HOC/hocComponent';
 import ButtonHOCComponent from './Components/HOC/ButtonHOCComponent';
 import AltPureComp from './Components/Pured/AltPureComp';
+import Create from './Components/Create';
 
 const App = () => {
   return (
     <>
-     <AltPureComp/>
+      < Create />
     </>
 
   );
 }
 
 export default App;
+
+
