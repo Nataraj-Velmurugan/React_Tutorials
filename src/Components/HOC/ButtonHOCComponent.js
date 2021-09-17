@@ -1,6 +1,5 @@
 import WrapperComponent from './WrapperComponent'
 
-
 const ButtonHocComponent = (props) => {
     return (
         <div>

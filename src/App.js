@@ -16,21 +16,12 @@ import RefDOMComponent from './Components/Refs_DOM/RefDOMComponent';
 import RefFunc from './Components/Refs_DOM/RefFunc';
 import HocComponent from './Components/HOC/hocComponent';
 import ButtonHOCComponent from './Components/HOC/ButtonHOCComponent';
+import AltPureComp from './Components/Pured/AltPureComp';
 
 const App = () => {
   return (
-    // <div>
-    //   <RefDOMComponent></RefDOMComponent>
-
-    // </div>
-
-    // <HocComponent disable/>
     <>
-      <ButtonHOCComponent enable />
-
-      <ButtonHOCComponent afterClick />
-
-      <ButtonHOCComponent />
+     <AltPureComp/>
     </>
 
   );
