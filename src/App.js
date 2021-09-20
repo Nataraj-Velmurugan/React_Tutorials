@@ -17,12 +17,14 @@ import RefFunc from './Components/Refs_DOM/RefFunc';
 import HocComponent from './Components/HOC/hocComponent';
 import ButtonHOCComponent from './Components/HOC/ButtonHOCComponent';
 import AltPureComp from './Components/Pured/AltPureComp';
-import Create from './Components/Create';
+import Create from './Components/CRUD/Create';
+import UseStateFunc from './Components/Func/UseStateFunc'
 
 const App = () => {
   return (
     <>
-      < Create />
+    <UseStateFunc/>
+    
     </>
 
   );
