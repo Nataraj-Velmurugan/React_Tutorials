@@ -18,12 +18,14 @@ import HocComponent from './Components/HOC/hocComponent';
 import ButtonHOCComponent from './Components/HOC/ButtonHOCComponent';
 import AltPureComp from './Components/Pured/AltPureComp';
 import Create from './Components/CRUD/Create';
-import UseStateFunc from './Components/Func/UseStateFunc'
+import UseStateFunc from './Components/Func/UseStateFunc';
+import UseEffectFunc from './Components/Func/UseEffectFunc';
+
 
 const App = () => {
   return (
     <>
-    <UseStateFunc/>
+    <UseEffectFunc/>
     
     </>
 

@@ -78,7 +78,6 @@ const UseStateFunc = () => {
     console.log("re - rendinering")
 
     return (
-
         <div>
             {/* <h1 onClick={wrapCounter}>I will increase {count}</h1> */}
 
@@ -87,10 +86,7 @@ const UseStateFunc = () => {
                 <h1 >{stateObj.beta}</h1> */}
 
             <h1 onClick={() => updateArr([...arr, arr.length+1])}>{arr[arr.length -1]}</h1>
-
         </div>
-
-
     )
 }
 
