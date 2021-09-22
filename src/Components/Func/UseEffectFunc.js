@@ -9,8 +9,6 @@ const UseEffectFunc = () => {
     const [page, setPage] = useState('posts');
     const [response, setResponse] = useState([]);
 
-    
-
     // useEffect(() => {
     //     console.log("useEffect")
     // }, []) // componentDidMount.
@@ -36,15 +34,17 @@ const UseEffectFunc = () => {
             .then(json => {
                 console.log(json)
                 return setResponse(json)
-        })
+            })
     }, [page]) // componentDidMount
 
-    console.log("render")
+    console.log("render");
 
-    let singleTodo = todo[0];
+    let todoList =  response.slice(0, 10)
+
+    // response[0].hasOwnProperty("title") ? response.slice(0, 10) :
 
     return (
-        
+
         <div>
             {/* <h1> {val1} </h1>
             <button onClick={() => setVal1(val1 + 10)}> click me !!!</button>
@@ -53,9 +53,33 @@ const UseEffectFunc = () => {
             
             <h1>{todo.length !== 0  ? singleTodo.id : "no post found"}</h1> */}
 
-    <button onClick={() => setPage('posts')}> posts !!!</button>
-    <button onClick={() => setPage('comments')}> comments !!!</button>
-    <h1>{JSON.stringify(response.length)}</h1>
+            <button onClick={() => setPage('posts')}> posts !!!</button>
+            <button onClick={() => setPage('comments')}> comments !!!</button>
+
+            <table>
+                <tr>
+                   
+                    <th>userId</th>
+                    <th>id</th>
+                    <th>title</th>
+                    <th>body</th>
+                </tr>
+
+                {todoList.map((item, index) => {
+                    return (
+                        <>
+                            <tr key={index}>
+                                <td>{page === "posts" ? item.userId : item.postId}</td>
+                                <td>{item.id} </td>
+                                <td>{page === "posts" ? item.title : item.email} </td>
+                                <td> {item.body.substring(0, 30)} </td>
+                            </tr>
+                        </>
+                    )
+                }
+                )}
+            </table>
+
         </div>
     )
 }
